@@ -7,7 +7,8 @@ app = Flask(__name__)
 def add(a, b):
     return a + b
 
-
+# adding comment so that i can push on github to check if codebuild is working fine 
+# webhook test for automatic build trigger
 def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
