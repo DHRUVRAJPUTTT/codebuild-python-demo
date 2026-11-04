@@ -1,5 +1,5 @@
 import pytest
-from app import app, add, divide
+from app import app, add, divide , multiply
 
 
 def test_add():
@@ -22,4 +22,4 @@ def test_home_route():
     assert response.json["status"] == "running"
     
 def test_intentional_failure():
-    assert add(2, 3) == 10
+    assert multiply(2, 3) == 6
