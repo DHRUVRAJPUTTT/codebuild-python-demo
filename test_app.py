@@ -20,3 +20,6 @@ def test_home_route():
     response = client.get("/")
     assert response.status_code == 200
     assert response.json["status"] == "running"
+    
+def test_intentional_failure():
+    assert add(2, 3) == 10
