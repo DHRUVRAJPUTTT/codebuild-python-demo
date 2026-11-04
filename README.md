@@ -1,8 +1,7 @@
-# codebuild-python-AWS
+# codebuild-python-aws
 
 A small Flask app with a fully automated CI pipeline: every push to `main` triggers **AWS CodeBuild** through a GitHub webhook, runs the **pytest** suite, and stores a ZIP artifact in **Amazon S3** only if all tests pass.
 
-![Pipeline diagram](codebuild-pipeline-diagram.png)
 
 ## How it works
 
